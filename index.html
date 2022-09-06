@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>บัญชี รายรับ - รายจ่าย</h2>
+    <div class="container">
+      <h4>ยอดคงเหลือ (บาท)</h4>
+      <h1 id="balance">Bath 0.00</h1>
+      <div class="income-expense-container">
+        <div>
+          <h4>รายรับ (Income)</h4>
+          <p class="money plus" id="money-plus">5000</p>
+        </div>
+        <div>
+          <h4>รายจ่าย (Expense)</h4>
+          <p class="money minus" id="money-minus">-200</p>
+        </div>
+      </div>
+      <h3>Transaction History</h3>
+      <ul class="list" id="list"></ul>
+      <h3>New Transaction</h3>
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Menu</label>
+          <input
+            type="text"
+            name=""
+            id="text"
+            placeholder="Insert transaction name"
+          />
+        </div>
+        <div class="form-control">
+          <label for="amount"
+            >Amount <br />
+            (+ income , - expense)</label
+          >
+          <input
+            type="number"
+            name=""
+            id="amount"
+            placeholder="Insert amount"
+          />
+        </div>
+        <button class="btn">Add transaction</button>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
